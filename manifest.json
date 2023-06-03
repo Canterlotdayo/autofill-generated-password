@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "AutoFill Password on register page",
+  "version": "1.0",
+  "description": "Addon to automatically fill password fields on registration pages",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
